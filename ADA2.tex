@@ -58,6 +58,104 @@
 		\end{center}
 		
 	\end{titlepage}
+\section*{Problema 7-11}
+Un mil de gas ideal a $27^{\circ}\mathrm{C}$ y $10 \; \mathrm{atm}$, se expande adiabáticamente hasta una presión constante opositora de $1\;\mathrm{atm}$. calcular la temperatura final, $\mathrm{Q}$, $\mathrm{W}$, $\Delta\mathrm{E}$ y $\Delta\mathrm{H}$ para los dos casos, $\mathrm{\bar{c}}_v=\frac{3\mathrm{R}}{2}$, $\mathrm{\bar{c}}_v=\frac{5\mathrm{R}}{2}$.\\
+
+Primero el caso de $\mathrm{\bar{c}}_v=\frac{3\mathrm{R}}{2}$:
+\begin{center}
+	\begin{tabular}{c c c}
+		Estado 1 &   &  Estado 2 \\
+		$\mathrm{T}_1=27^{\circ}\mathrm{C}$\; (300.15$\mathrm{K}$) &   & $\mathrm{T}_2=?$ \\
+		$\mathrm{P}_1=10\mathrm{atm}$ &   & $\mathrm{P}_2=1\mathrm{atm}$ \\
+		$\mathrm{V}_1=?$ &   & $\mathrm{V}_2=?$\\
+		$n=1\mathrm{mol}$&   & $n=1\mathrm{mol}$
+	\end{tabular}
+\begin{displaymath}
+	\mathrm{R}=0.08206\; \frac{\mathrm{atm}\cdot\mathrm{L}}{\mathrm{mol}\cdot\mathrm{K}}
+\end{displaymath}
+\end{center}
+
+Calculando el volumen en el estado 1
+
+\begin{displaymath}
+	\mathrm{P}\mathrm{V}=n\mathrm{R}\mathrm{T} \rightarrow \mathrm{P}_1\mathrm{V}_1=n\mathrm{R}\mathrm{T}_1 \rightarrow \mathrm{V}_1=\frac{n\mathrm{R}\mathrm{T}_1}{\mathrm{P}_1}
+\end{displaymath}
+
+\begin{displaymath}
+	\mathrm{V}_1=\frac{(1\mathrm{mol})(	\mathrm{R}=0.08206\; \frac{\mathrm{atm}\cdot\mathrm{L}}{\mathrm{mol}\cdot\mathrm{K}})(300.15\mathrm{K})}{10\mathrm{atm}}
+\end{displaymath}
+\begin{displaymath}
+	\therefore\mathrm{V}_1=2.0463 \;\mathrm{L}
+\end{displaymath}
+
+Para el caso no reversible procedemos de la siguiente forma, tenemos dos incognitas: $\mathrm{T}_2$ y $\mathrm{V}_2$. Se necesitan dos ecuaciones, la primera ecuación es:
+\begin{displaymath}
+	\mathrm{P}_2\mathrm{V}_2=n\mathrm{R}\mathrm{T}_2 \rightarrow \mathrm{V}_2=\frac{n\mathrm{R}\mathrm{T}_2}{\mathrm{P}_2}
+\end{displaymath}
+
+La siguiente ecuación es:
+\begin{displaymath}
+	\mathrm{P}\Delta\mathrm{V}=-\mathrm{W} \rightarrow 	\mathrm{P}\Delta\mathrm{V}= -n\mathrm{\bar{c}}_v\Delta\mathrm{T}
+\end{displaymath}
+Que sería igual a:
+\begin{displaymath}
+	\mathrm{P}_2(\mathrm{V}_2-\mathrm{V}_1)=-n\mathrm{\bar{c}}_v(\mathrm{T}_2-\mathrm{T}_1)
+\end{displaymath}
+Desarrollando y sustituyendo $\mathrm{V}_2$ para despejar $\mathrm{T}_2$
+
+\begin{displaymath}
+	n\mathrm{\bar{c}}_v\mathrm{T}_1+\mathrm{P}_2\mathrm{V}_1=\mathrm{T}_2\left[ n\mathrm{\bar{c}}_v+n\mathrm{R} \right]
+\end{displaymath}
+Agregando el valor de $\mathrm{\bar{c}}_v$ y terminando el despeje
+\begin{displaymath}
+	\mathrm{T}_2=\frac{2}{5\mathrm{R}n}\left[ \frac{3\mathrm{R}n\mathrm{T}_1}{2}+\mathrm{P}_2\mathrm{V}_1 \right]
+\end{displaymath}
+\begin{displaymath}
+	\Rightarrow	\mathrm{T}=\frac{2}{5}\left[ \frac{3\mathrm{T}}{2}+\frac{\mathrm{P}_2\mathrm{V}_1}{\mathrm{R}n} \right]
+\end{displaymath}
+
+Sustituyendo valores y resolviendo
+\begin{displaymath}
+	\mathrm{T}_2=\frac{2}{5} \left[ \frac{3(300.15\mathrm{K})}{2}+\frac{(1\mathrm{atm})(2.463\mathrm{L})}{(0.08206\; \frac{\mathrm{atm}\cdot\mathrm{L}}{\mathrm{mol}\cdot\mathrm{K}})(1\mathrm{mol})} \right]
+\end{displaymath}
+\begin{displaymath}
+	\therefore \mathrm{T}_2=192.1\mathrm{K}
+\end{displaymath}
+Al ser un proceso adiabático 
+\begin{displaymath}
+	\mathrm{Q}=0
+\end{displaymath}
+Calculando $\Delta\mathrm{E}$
+\begin{displaymath}
+	\Delta \mathrm{E}=\mathrm{\bar{c}}_v(\mathrm{T}_2-\mathrm{T}_1)\rightarrow \Delta\mathrm{E}=\frac{3\mathrm{R}}{2}\left( \mathrm{T}_2-\mathrm{T}_1 \right)
+\end{displaymath}
+\begin{displaymath}
+	\Rightarrow \Delta\mathrm{E}=\frac{3}{2}\left( 0.08206\; \frac{\mathrm{atm}\cdot\mathrm{L}}{\mathrm{mol}\cdot\mathrm{K}} \right) \left( 192.1-300.15 \right)\mathrm{K}
+\end{displaymath}
+\begin{displaymath}
+	\therefore \Delta\mathrm{E}=-1.35\frac{\mathrm{kJ}}{\mathrm{mol}}
+\end{displaymath}
+Calculando $\mathrm{W}$
+\begin{displaymath}
+	-\mathrm{W}=\Delta\mathrm{E}\Rightarrow \mathrm{W}=1.35\frac{\mathrm{kJ}}{\mathrm{mol}}
+\end{displaymath}
+Calculando $\Delta\mathrm{H}$
+\begin{displaymath}
+	\Delta\mathrm{H}=(\mathrm{\bar{c}}_v+\mathrm{R})(\mathrm{T}_2-\mathrm{T}_1)\Rightarrow \Delta\mathrm{H}=\frac{5\mathrm{R}}{2}(\mathrm{T}_2-\mathrm{T}_1)
+\end{displaymath}
+\begin{displaymath}
+	\Delta\mathrm{H}=\frac{5}{2}\left( 0.08206\; \frac{\mathrm{atm}\cdot\mathrm{L}}{\mathrm{mol}\cdot\mathrm{K}} \right)\left( 192.1-300.15 \right)\mathrm{K}
+\end{displaymath}
+\begin{displaymath}
+	\therefore \Delta\mathrm{H}-2.24 \frac{\mathrm{kJ}}{\mathrm{mol}}
+\end{displaymath}
+
+
+
+
+
+
+
 
 
 \end{document}
